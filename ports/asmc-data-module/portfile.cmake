@@ -1,8 +1,8 @@
 vcpkg_from_github(
   OUT_SOURCE_PATH SOURCE_PATH
   REPO PalamaraLab/DataModule
-  REF c83cf0659e42c21494479f66214514c504c1837d
-  SHA512 9080c1fd4c2f581b1b51b235ede90d147c463183fc14f0284e0144a309a4b7e0f94b101d6178f47304b005f683da3a2719f98746741faf3e97a71f3457c5875a
+  REF f3ed75b6de95d724c2da47c406bc1704d2d0a815
+  SHA512 24f6f27ff6c877e05206835073db3e38a944565d76899f5a97c5b3dc85aae4928323fdf1b8500adb8c40616f7975233d15450dc3461c4e4649ab927688181bcf
   HEAD_REF main
 )
 
@@ -13,7 +13,7 @@ vcpkg_configure_cmake(
   PREFER_NINJA
 )
 vcpkg_install_cmake()
-vcpkg_fixup_cmake_targets(CONFIG_PATH "${CMAKE_INSTALL_LIBDIR}/cmake/AsmcDataModule")
+vcpkg_fixup_cmake_targets(CONFIG_PATH "${CMAKE_INSTALL_LIBDIR}/cmake/asmc-data-module")
 
 file(REMOVE_RECURSE "${CURRENT_PACKAGES_DIR}/debug/include")
 file(REMOVE_RECURSE "${CURRENT_PACKAGES_DIR}/debug/share")
